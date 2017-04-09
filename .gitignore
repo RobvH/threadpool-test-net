@@ -1,0 +1,65 @@
+# Ignores for Rider
+.idea
+
+# Ignores for Visual Studio 2008
+
+# use glob syntax
+syntax: glob
+
+# Ignore Visual Studio 2008 files
+*.tss
+*.csproj.orig
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vs[ps]scc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.cs.orig
+
+# Emphemeral and others
+[Bb]in
+[Db]ebug*/
+obj/
+[Rr]elease*/
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+build/
+.builds
+~$*
+*.[Cc]ache
+
+# NuGet Packages Directory
+packages
+*.nupkg
+
+# Resharper
+_ReSharper*/
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+.dotnet/*
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Windows Azure Build Output
+csx
+*.build.csdef
