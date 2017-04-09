@@ -20,10 +20,10 @@ This implementation written and tested to work on .NET Core 1.1 and therefore on
 
 Unfortunately, .NET Core does not implement `System.Threading.ThreadPool.SetMinThreads`. While this is for a good reason, see: [dotnet/coreclr#1606 (comment)](https://github.com/dotnet/coreclr/issues/1606#issuecomment-144126757), CoreCLR systems must set this value on the CLR at runtime. There are two options: runtime configuration or environment variables.
 
-####Runtime Configuration:
+#### Runtime Configuration:
  `System.Threading.ThreadPool.MinThreads` (see: [CoreCLR Host Configuration knobs](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/clr-configuration-knobs.md), [Runtime Configuration format](https://github.com/dotnet/cli/blob/rel/1.0.0/Documentation/specs/runtime-configuration-file.md)).
 
-####Environment Variable:
+#### Environment Variable:
 `set COMPlus_ThreadPool_ForceMinWorkerThreads=100` (see: [dotnet/corefx Threadpool Min/Max ThreadCount Configuration](https://github.com/dotnet/corefx/issues/15990#issuecomment-279023245))
 
 
